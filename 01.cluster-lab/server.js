@@ -1,7 +1,7 @@
 const express = require("express");
 const cluster = require("cluster");
 const numCPUs = require("os").cpus().length;
-const fibObj = require("./math-logic/fibonacci-series");
+const fibObj = require("./fibonacci-series");
 
 if (cluster.isMaster) {
   console.log("Number of cores: " + numCPUs);
