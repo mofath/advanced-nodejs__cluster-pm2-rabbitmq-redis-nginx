@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mofath/nodejs-cluster--pm2-rabbitmq-redis-nginx#readme",
   "dependencies": {
+    "amqplib": "^0.6.0",
     "express": "^4.17.1"
   }
 }
