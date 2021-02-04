@@ -37,6 +37,9 @@ if (cluster.isMaster) {
   });
 
   for (let i = 0; i < numCPUs - 10; i++) {
+    // the master process will fork into
+    // two processes which will be responsible 
+    // for accepting the requests from the client
     const worker = cluster.fork();
     console.log(`Worker started on PID - ${worker.process.pid}`);
   }
